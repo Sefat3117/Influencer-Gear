@@ -1,0 +1,255 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
+/*........... banner 
+....................*/
+
+header p{
+    font-size: 24px;
+    margin: 50px 0 0 50px;
+    color: darkblue;
+}
+.top-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-banner{
+    width: 50%;
+}
+.left-banner h1{
+    font-size: 35px;
+    color: darkblue;
+}
+.influencer{
+    color: crimson;
+}
+.left-banner p{
+    font-size: 12px;
+}
+.top-button{
+    width: 170px;
+    height: 20px;
+    background-color: darkblue;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    outline: none;
+    transition: ease-out 0.5s;
+    box-shadow: inset 0 0 0 0 #f9e506;
+}
+.top-button:hover{
+    box-shadow: inset 300px 0 0 0 #f9e506;
+    cursor: pointer;
+}
+.button-one:hover{
+    color: #000;
+}
+.button-one{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 16px;
+}
+.icon-one{
+    color: white;
+    margin-left: 5px;
+}
+.right-banner img{
+    width: 440px;
+    height: 414px;
+}
+
+/*..... products
+........... */
+.popular{
+    margin-top: 80px;
+}
+.popular h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.all-products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    margin-left: 30px;
+}
+.product{
+    width: 320px;
+    box-shadow: 1px 1px 5px gray;
+    /* border: 2px solid white; */
+    border-radius: 5px;
+}
+.product img{
+    width: 300px;
+    height: 300px;
+}
+.product h5,h3{
+    line-height: 4px;
+}
+.product img,h3,h5{
+    padding: 10px 0 0 10px;
+}
+.fa-star{
+    color: goldenrod;
+}
+.rating{
+    margin-left: 3px;
+}
+.products-icon{
+    text-align: right;
+    margin: 5px 10px 0 0 ;
+}
+.products-icon h3{
+    display: inline-block;
+    color: crimson;
+}
+.products-icon .fa-long-arrow-alt-right{
+    color: crimson;
+}
+
+/*.......... customer
+............... */
+.customer{
+    margin-top: 10%;
+    background-color: rgba(255, 89, 89, 0.1);
+    padding: 10px 0;
+}
+.customer h1{
+    font-size: 30px;
+    text-align: center;
+    color: chocolate;
+}
+.review{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.review img{
+    width: 300px;
+    height: 200px;
+}
+.information{
+    width: 50%;
+    margin-left: 5%;
+}
+.information h2{
+    color: chocolate;
+}
+.review-icons{
+    text-align: center;
+    margin: 5px 0 0 800px;
+    color: coral;
+}
+.review-icons i{
+    margin-right: 25px;
+    color: crimson;
+}
+.review-icons .fa-forward{
+    /* border: 1px solid blue; */
+    border-radius: 10px;
+    background-color: pink;
+    padding: 3px;
+    
+}
+/* footer ....
+*/
+footer{
+    text-align: center;
+    line-height: 1px;
+    margin: 10% 0 0 0;
+    color: cornsilk;
+    background-color: black;
+    height: 150px;
+    padding-top: 5px;
+}
+footer i{
+    margin-right: 10px;
+    color: crimson;
+}
+
+/*...................
+Media Queries 
+............*/
+
+/* Mobile Device */
+@media only screen and (max-width: 688px) {
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
+    .header p{
+        text-align: start;
+        margin: 0;
+    }
+    .top-banner{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        justify-items: center;
+    }
+    .left-banner{
+        width: 90%;
+    }
+    .right-banner img{
+        width: 90%;
+        
+    }
+    .all-products{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 0;
+        justify-items: center;
+        align-items: center;
+    }
+    .products-icon{
+        text-align: center;
+        margin:  0 ;
+    }
+    
+    .review{
+        flex-direction: column;
+    }
+    
+    .information{
+        margin-left: 0;
+    }
+     
+}
+/* Tablet Device */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
+    header p{
+        text-align: start;
+    
+    }
+    .top-banner{
+        flex-direction: column;
+      
+    }
+    .all-products{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    align-items: center;
+    }
+    .customer{
+        align-items: center;
+    }
+    .review{
+        flex-direction: column;
+    }
+}
+    
+
