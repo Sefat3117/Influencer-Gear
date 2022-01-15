@@ -211,9 +211,12 @@ Media Queries
         text-align: center;
         margin:  0 ;
     }
-    
     .review{
         flex-direction: column;
+    }
+    .review-icons i{
+        margin: 0;
+        text-align: start;
     }
     
     .information{
